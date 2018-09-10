@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--orig written 03-27-18-->
+<html lang="en">
+<head>
+	<title>Sign Up Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Rancho" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		body {
+			background-color: #000000;
+		}
+
+		h1 {
+			color: #D8BFD8;
+			font-size: 4em;
+			font-family: Rancho, cursive;
+            border: none;
+            padding: 0;
+            margin: 0.5em 0em 0em 0.5em;
+            float: left;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			font-family: Lato, sans-serif;
+            padding: 0em;
+		}
+
+		#logo {
+			float: right;
+            padding: 0;
+            margin: 0.5em 0.5em 0em 0em;
+		}
+
+		label {
+			font-size: 1em;
+			font-family: Lato, sans-serif;
+			color: #FFF;
+            padding: 0;
+            border: none;
+            margin: 0.5em 1em;
+            width: 140px;
+		}
+
+        input {
+            color: black;
+            font-weight: lighter; 
+        }
+		
+        .image {
+            background-image: url("https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cbc3b29b62775efc573115ee5f413905&auto=format&fit=crop&w=1282&q=80");
+			background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: auto;
+            margin:0%;
+            padding: 2em 1em 1em 1em;
+		}
+        
+        h2.form {
+            color: #FFF;
+            padding: 0em 0em 0.5em 0.5em;
+        }
+
+		#submit {
+			background-color: #e7e7e7; color: black;
+			padding: 10px 30px;
+			text-align: center;
+			font-size: 1.5em;
+            font-family: Rancho, cursive;
+			border: 1px solid black;
+			border-radius: 4px;
+			width: auto;
+            min-width: 185px;
+            margin: 2em 0em 2em 0.8em;
+
+		}
+
+        #submit:hover { 
+            background-color: #D8BFD8;
+            /*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
+         }
+
+		/* button {
+			margin: auto;
+			display: block; 
+		}*/
+
+        .maparea {
+            margin: 2em 0em 0em 1em;
+        }    
+
+        footer {
+            padding: 0.5em 0em;
+        }
+
+        footer p {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            color: #BCBCBC;
+            font-family: Lato, sans-serif;
+        }
+
+        .photo-credit {
+            font-size: 0.8em;
+        }
+
+
+	</style>
+</head>
+<body>
+    <div class="image"></div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Horizons Yoga</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Our Teachers</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="image">
+            <!--header-->
+            <div class="row">
+                <!--
+                <image src="http://werunhuntsville.com/wp-content/uploads/2017/10/yoga.png" alt="Horizons Yoga Logo" title="Horizons Yoga" height="50px" width="50px" id="logo">
+                -->
+                <h1>Become a Member</h1>
+                <!-- <image src="https://amp.businessinsider.com/images/5a66170100d0ef9c028b46cd-640-480.jpg" alt="" title="woman practicing yoga" id="yogaWoman"> -->
+            </div>
+            <div class="row">  
+                <div class="col-xs-8">    
+                    <h2 class="form">Create an account and get our free newsletter!</h2><!--add padding-->
+                    <form action="" method="post">
+                        <div>
+                            <label>First Name <input type="text" name="firstname" value="Jenny   " onfocus="if (this.value=='Jenny   ') this.value=''; " size="25" maxlength="50"></input></label>
+                        </div>
+                        <div>
+                            <label>Last Name <input type="text" name="lastname" value="Davis   " onfocus="if (this.value=='Davis   ') this.value='';" size="25" maxlength="50"></input></label>
+                        </div>
+                        <div>
+                            <label>Email <input type="text" name="Email" value="example@email.com" onfocus="if (this.value=='example@email.com') this.value='';" size="25" maxlength="50"></input></label>
+                        </div>
+                        <div>
+                            <label>Password <input type="password" name="Password" value="password" onfocus="if (this.value=='password') this.value='';" size="25" maxlength="50"></input></label>
+                        </div>
+                        <button id="submit">Create Account</button>
+                    </form>
+                </div>
+            </div>   
+        
+                <div class="maparea">
+                    <h2 style="color:#FFF">Stop by to sign up in person</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440899.73495230306!2d-98.03359632609083!3d30.307462410271366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C+TX!5e0!3m2!1sen!2sus!4v1522160798336" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+        </div>             
+    </div>
+    <footer>
+        <p>© 2018 by Katie Malmay</p>
+        <p class="photo-credit">Photo by Christopher Campbell on Unsplash</p>
+    </footer>
+</body>
+</html>
